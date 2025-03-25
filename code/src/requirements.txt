@@ -1,0 +1,4 @@
+gradio 
+requests 
+transformers 
+extract_msg
