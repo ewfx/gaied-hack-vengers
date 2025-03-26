@@ -19,15 +19,15 @@ This project is designed to classify and process incoming emails by detecting du
 ## 🎥 Demo
 🔗 [Live Demo](https://5a22d97aff81cd28f6.gradio.live/)
 
-📹 [Video Demo](https://github.com/ewfx/gaied-hack-vengers/blob/main/artifacts/demo/video-recording.mp4)
+📹 [Video Demo](https://github.com/ewfx/gaied-hack-vengers/tree/main/artifacts/demo/video%20recording)
 
 🖼️ Screenshots:
 
-![AI powered classification system](https://github.com/ewfx/gaied-hack-vengers/blob/main/artifacts/demo/Capture%201.png)
-![Uploaded email](https://github.com/ewfx/gaied-hack-vengers/blob/main/artifacts/demo/Capture%202.png)
-![Duplicate email](https://github.com/ewfx/gaied-hack-vengers/blob/main/artifacts/demo/Duplicate%20email.png)
-![Invalid file type](https://github.com/ewfx/gaied-hack-vengers/blob/main/artifacts/demo/Invalid%20file%20type.png)
-![Extract required classification parameters](https://github.com/ewfx/gaied-hack-vengers/blob/main/artifacts/demo/Request%20type%20extracted.png)
+![AI powered classification system](https://github.com/ewfx/gaied-hack-vengers/blob/main/artifacts/demo/screenshots/Capture%201.png)
+![Uploaded email](https://github.com/ewfx/gaied-hack-vengers/blob/main/artifacts/demo/screenshots/Capture%202.png)
+![Duplicate email](https://github.com/ewfx/gaied-hack-vengers/blob/main/artifacts/demo/screenshots/Duplicate%20email.png)
+![Invalid file type](https://github.com/ewfx/gaied-hack-vengers/blob/main/artifacts/demo/screenshots/Invalid%20file%20type.png)
+![Extract required classification parameters](https://github.com/ewfx/gaied-hack-vengers/blob/main/artifacts/demo/screenshots/Request%20type%20extracted.png)
 
 ## 💡 Inspiration
 Manually processing high volumes of financial request emails is time-consuming and prone to errors. This project aims to automate email classification and processing using AI to ensure accurate and fast decision-making.
