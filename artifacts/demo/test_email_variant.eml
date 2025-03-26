@@ -1,0 +1,21 @@
+From: finance_dept@example.com
+To: processing@yourcompany.com
+Subject: Money Movement Outbound - Foreign Currency Request
+Date: Thu, 28 Mar 2025 11:15:00 +0000
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+
+Dear Processing Team,
+
+We need to process a Money Movement Outbound request in **Foreign Currency** for the following details:
+
+Deal: Global Expansion Fund  
+Amount: $5,000,000.00  
+Expiration Date: 09/15/2026  
+
+Kindly process this request at the earliest and confirm the transaction details.
+
+Best Regards,  
+Jane Smith  
+Head of Finance  
+ABC Enterprises

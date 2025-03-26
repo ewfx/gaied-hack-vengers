@@ -1,0 +1,135 @@
+Delivered-To: 1rn22is047.pranavkeshav@gmail.com
+Received: by 2002:a05:6022:3416:b0:6c:977c:2472 with SMTP id by22csp274299lab;
+        Sat, 22 Mar 2025 13:20:28 -0700 (PDT)
+X-Received: by 2002:a17:907:9449:b0:ac1:dfab:d38e with SMTP id a640c23a62f3a-ac3f21162edmr708138566b.15.1742674828058;
+        Sat, 22 Mar 2025 13:20:28 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1742674828; cv=none;
+        d=google.com; s=arc-20240605;
+        b=ZvaUKYXPSxW53yjUp3a2NbEnirvvGmXHIFsMweH31xRhTIDR7cqZQJSGYXQ+qsaTG0
+         OWCT3uJH0mlbEGyM+oOWpASmLk/WxnafSdcatpa3jhl6hbfX0VPdNxp4L9TbPcrKaXxL
+         uLNiAQ3jLDN/yUySQuMThX6vDHWsD9sRTgK5W3WkkKPNouPdihXA7hBTRnLC+EhW8Caf
+         dsjJeaxpWLBQHRP9wZfmygsJTN87NYEAPQa/+ulUCcKiMsd7wi36CqYe495XlJMrc8Vy
+         1ZUvEom2g0f901RjkhqXgekYr9RxxI3m+eDGX+86bPgEf7npCJmhfHJV+Oo23zmq1a6E
+         zE6A==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=X0R+k6NaUldR2ASViyIglDqtXgS6ezGq+EUiM6zcpCA=;
+        fh=7xsi+whJAKnSdHygEPpipRCOJoymLu7e6WW7oQ08KrU=;
+        b=Muj85N1Flt9RbtyTOC4xroBuGSqDKsnlTqo8YquY8N6FjEuI4nqhY1U8AvZW/YUvfr
+         nlvFnIRsWdV9hQM44RTSuBnbVB1MArDbhtlEcc2rCdLFGPDyq/2P++fVg8lCz6zXj6S8
+         c5oubXhDqis+wd2MYbsT2Kl1xDEf9+e0B5XM29z0SteXGRsblU9fwwR/0FXJ8HvcaEqX
+         htkwSFeOZwNFYTUoEF1VLGClBJw5l5if82Hesp0KjEo8zLU5Ctyy+h4znL/ECHVrwzH0
+         LzWiCc4oRce75sfvToHlO2gRdEva6jUCKR2L1CKirjzVkk51BLpaTz74S4qrvxerTfRp
+         2EVA==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=eziRhdOO;
+       spf=pass (google.com: domain of nonpersonalpk@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=nonpersonalpk@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <nonpersonalpk@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id a640c23a62f3a-ac3efd24632sor265585966b.17.2025.03.22.13.20.27
+        for <1rn22is047.pranavkeshav@gmail.com>
+        (Google Transport Security);
+        Sat, 22 Mar 2025 13:20:28 -0700 (PDT)
+Received-SPF: pass (google.com: domain of nonpersonalpk@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=eziRhdOO;
+       spf=pass (google.com: domain of nonpersonalpk@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=nonpersonalpk@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1742674827; x=1743279627; dara=google.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=X0R+k6NaUldR2ASViyIglDqtXgS6ezGq+EUiM6zcpCA=;
+        b=eziRhdOO7PwlTPU8D/eL4Gu/Zt9Rnsd9K7IFA7WM/FOWCCZvEWRv442D7T1uIxzGce
+         gTVI6QhXVuFNzdwkq6M9564cRDW/66Bc0+yo18vD+unkpCmJcTNGS7YhbDzH332+dDOO
+         TVkRGK2hg8hajEljGHYcynOM+6xGGCgyvdvJQPtTOyN5fzH8EgJLb8WtmteMl4treyK5
+         BaSXwaP883DleJUhuiJsKckHfsJpcNpQADl18FxY20ITjF7Duko97Z0dRLVH+orIllke
+         kEkBPnRXbSdBM2pOZTvmwavk6VEzc2FpXKvrA6RhqpZDd3ZBV2LwZpvzRWL9AZHV5AiX
+         c0WA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1742674827; x=1743279627;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=X0R+k6NaUldR2ASViyIglDqtXgS6ezGq+EUiM6zcpCA=;
+        b=Wx8UP5NSr8qljRZP08sUEw8V2syxFS4Erb8NG2oexPZV17CNCUEz+d6EVnJRMgGRPn
+         9Sk/y6+FgsMbFmdiwvfFtYNynjJyJuRh/SpkUdzr7ZN5CAL1dJVPD8CVBM0xKP2mMNhr
+         ijDnVpG2CoZdc1vD7xFcKAwav5hLAtmPlv2qJbaSYJggJ52b7V6FApG1wyqSa2pOg80c
+         LCSh1O/0k6fgMVkBYMVKuXjrJtvkUvq0AgHXzjRvlIflnyFhbC88dxTVR0+co4XklJ+O
+         zgTHiXQmLWURbsxRWat/tyjvrOWXdETOrt7Xab5t7KIDcIN7MnIcVhwAkBitNZA9j621
+         HT2w==
+X-Gm-Message-State: AOJu0Yw5T7Vzlk2/g6OhWjwfE5+tcz0wLcSayluLDe/7uJigh9duOvXo
+	AdaR1p1UA6befcXQ3U0o/SjmVWO2Kd00AV3zq43Mz+5umtNvKij2cGX3dnyh2Zzf9+a5dMX68xr
+	G92PsM5Sfhg838NM2hCxANjB8EycyVmEp
+X-Gm-Gg: ASbGncutnKWWIzGy7iT1wIsW5m70A6sb8XIUXFw+gEo1cH0ZBQpEw93NuSdPOG4nVXj
+	Mc+9LL1CqPfRgKdQSgICKt0iFeKisxmvoHagF/cC/elaTQ5/RA7ps9fIjzp873JC5+s/1IGWdMQ
+	0/O3aufld8SarjPHZjrQgO8Z1cAYYxBo9jDKK4XXVrE8S1e1w5BcecHM7xFA==
+X-Google-Smtp-Source: AGHT+IHU6f0q1/xQFU7gad3Ad5kCbrtF1jwaRI6TaqMD42/9jzhXwkLnOxMvX3u9INh297PcL9JcU5JA6WtbIXNMMEI=
+X-Received: by 2002:a17:907:6d28:b0:ac2:d1bd:3293 with SMTP id
+ a640c23a62f3a-ac3f2118917mr561895466b.19.1742674826877; Sat, 22 Mar 2025
+ 13:20:26 -0700 (PDT)
+MIME-Version: 1.0
+From: Poojitha Keshav <nonpersonalpk@gmail.com>
+Date: Sun, 23 Mar 2025 01:50:14 +0530
+X-Gm-Features: AQ5f1JoemjjDk2yERo068zQAH7hAVOGb1_rHMsTmWqeDby7eArwx3-eBQWEyujs
+Message-ID: <CAJLH=X96mxMQnduYbHiKGeX=-5qpaXGkGDk9FCc48CLZ1FxAuQ@mail.gmail.com>
+Subject: Request for Information
+To: Pranav Keshav <1rn22is047.pranavkeshav@gmail.com>
+Content-Type: multipart/alternative; boundary="00000000000003e7280630f41a31"
+
+--00000000000003e7280630f41a31
+Content-Type: text/plain; charset="UTF-8"
+
+Dear ABC Bank Customer Support,
+
+I hope this email finds you well. I am writing to inquire about fee
+payment/money deposit at your bank. I would appreciate your guidance on the
+process and any necessary documents required.
+
+Specifically, I would like to know:
+1. The available payment methods for account maintenance or loan repayment.
+2. Any applicable charges or processing fees.
+3. The estimated processing time for the transaction.
+4. Any additional steps I need to follow.
+Please let me know if there are any forms I need to fill out or if an
+in-person visit is required. I would
+appreciate your prompt response at your earliest convenience.
+
+Thank you for your assistance.
+
+Best regards,
+John Doe
+johndoe@email.com
+Account No: 1234567890
+
+--00000000000003e7280630f41a31
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Dear ABC Bank Customer Support,<div dir=3D"auto"><br><div=
+ dir=3D"auto">I hope this email finds you well. I am writing to inquire abo=
+ut fee payment/money deposit at your bank. I would appreciate your guidance=
+ on the process and any necessary documents required.</div><div dir=3D"auto=
+"><br></div><div dir=3D"auto">Specifically, I would like to know:
+</div><div dir=3D"auto">1. The available payment methods for account mainte=
+nance or loan repayment.
+</div><div dir=3D"auto">2. Any applicable charges or processing fees.
+</div><div dir=3D"auto">3. The estimated processing time for the transactio=
+n.
+</div><div dir=3D"auto">4. Any additional steps I need to follow.
+</div><div dir=3D"auto">Please let me know if there are any forms I need to=
+ fill out or if an in-person visit is required. I would
+</div><div dir=3D"auto">appreciate your prompt response at your earliest co=
+nvenience.
+</div><div dir=3D"auto"><br></div><div dir=3D"auto">Thank you for your assi=
+stance.
+</div><div dir=3D"auto"><br></div><div dir=3D"auto">Best regards,=20
+</div><div dir=3D"auto">John Doe=20
+</div><div dir=3D"auto"><a href=3D"mailto:johndoe@email.com">johndoe@email.=
+com</a>=20
+</div><div dir=3D"auto">Account No: 1234567890</div></div></div>
+
+--00000000000003e7280630f41a31--
